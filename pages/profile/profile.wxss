@@ -1,0 +1,135 @@
+/* pages/profile/profile.wxss */
+
+.container {
+  padding: 20rpx;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+  border: 2rpx solid #ddd;
+}
+
+.change-avatar-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.edit-button {
+  font-size: 14px;
+  padding: 10rpx 20rpx;
+  background-color: #f0f0f0;
+  border-radius: 20rpx;
+}
+
+.edit-section {
+  background-color: #f8f8f8;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 40rpx;
+}
+
+.edit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.edit-label {
+  font-weight: bold;
+  margin-right: 20rpx;
+  width: 80rpx;
+}
+
+.edit-input {
+  flex: 1;
+  background-color: #fff;
+  padding: 10rpx;
+  border-radius: 5rpx;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.save-button, .cancel-button {
+  width: 45%;
+}
+
+.save-button {
+  background-color: #007AFF;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f0f0f0;
+}
+
+.info-section {
+  background-color: #f8f8f8;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 40rpx;
+}
+
+.info-item {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+.info-label {
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  width: 45%;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}

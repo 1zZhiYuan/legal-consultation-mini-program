@@ -1,0 +1,3 @@
+<view class="container">
+  <text>案件详情页面，ID: {{caseId}}</text>
+</view>

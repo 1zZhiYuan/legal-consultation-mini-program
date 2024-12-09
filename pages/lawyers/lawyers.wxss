@@ -1,0 +1,58 @@
+/* pages/lawyers/lawyers.wxss */
+
+.container {
+  padding: 20rpx;
+}
+
+.lawyer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.lawyer-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.lawyer-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  margin-right: 20rpx;
+}
+
+.lawyer-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lawyer-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.lawyer-speciality, .lawyer-contact {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 5rpx;
+}
+
+.lawyer-actions {
+  display: flex;
+  align-items: center;
+}
+
+.consult-btn {
+  background-color: #007AFF;
+  color: white;
+  font-size: 28rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/register/register",
+    "pages/index/index",
+    "pages/lawyers/lawyers",
+    "pages/profile/profile",
+    "pages/assessment/assessment",
+    "pages/faq-detail/faq-detail",
+    "pages/chat/chat",
+    "pages/issueDetail/issueDetail",
+    "pages/consultations/consultations",
+    "pages/cases/cases",
+    "pages/consultationDetail/consultationDetail",
+    "pages/caseDetail/caseDetail",
+    "pages/lawyerDetail/lawyerDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "法律咨询",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/lawyers/lawyers",
+        "text": "找律师",
+        "iconPath": "images/tabbar/lawyer.png",
+        "selectedIconPath": "images/tabbar/lawyer-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/tabbar/profile.png",
+        "selectedIconPath": "images/tabbar/profile-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

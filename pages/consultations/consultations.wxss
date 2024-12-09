@@ -1,0 +1,22 @@
+/* pages/consultations/consultations.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.consultation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-item {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.consultation-date, .consultation-topic, .consultation-status {
+  font-size: 16px;
+  margin-bottom: 5rpx;
+}

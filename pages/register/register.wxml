@@ -1,0 +1,10 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <image class="logo" src="/images/lawyers.jpg" mode="aspectFit"></image>
+  <view class="form">
+    <input class="input" type="text" placeholder="请输入用户名" bindinput="onUsernameInput" />
+    <input class="input" type="password" placeholder="请输入密码" bindinput="onPasswordInput" />
+    <button class="button register-button" bindtap="register">注册</button>
+    <button class="button login-button" bindtap="login">登录</button>
+  </view>
+</view>

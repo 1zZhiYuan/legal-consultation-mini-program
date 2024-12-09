@@ -1,0 +1,74 @@
+.container {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+}
+
+.lawyer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+  padding: 25rpx;
+}
+
+.lawyer-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  margin-bottom: 15rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+
+.lawyer-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.lawyer-speciality {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.lawyer-contact {
+  font-size: 26rpx;
+  color: #444;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 15rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+
+.lawyer-description {
+  font-size: 24rpx;
+  color: #555;
+  line-height: 1.5;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 20rpx;
+}
+
+.lawyer-experience {
+  font-size: 24rpx;
+  color: #555;
+  line-height: 1.5;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}

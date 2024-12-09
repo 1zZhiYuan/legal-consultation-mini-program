@@ -1,0 +1,16 @@
+<!--pages/lawyers/lawyers.wxml-->
+<view class="container">
+  <view class="lawyer-list">
+    <view wx:for="{{lawyers}}" wx:key="id" class="lawyer-card">
+      <image class="lawyer-avatar" src="{{item.avatarUrl}}" mode="aspectFill"></image>
+      <view class="lawyer-info">
+        <text class="lawyer-name">{{item.name}}</text>
+        <text class="lawyer-speciality">专长: {{item.speciality}}</text>
+        <text class="lawyer-contact">联系方式: {{item.contact}}</text>
+      </view>
+      <view class="lawyer-actions">
+        <button class="consult-btn" bindtap="navigateToChat" data-id="{{item.id}}">咨询</button>
+      </view>
+    </view>
+  </view>
+</view>

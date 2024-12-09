@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="consultation-list">
+    <view wx:for="{{consultations}}" wx:key="id" class="consultation-item">
+      <text class="consultation-date">{{item.date}}</text>
+      <text class="consultation-topic">{{item.topic}}</text>
+      <text class="consultation-status">{{item.status}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="chat-header">
+    <image class="avatar" src="{{lawyer.avatarUrl}}" mode="aspectFill"></image>
+    <text class="lawyer-name">{{lawyer.name}}</text>
+  </view>
+  <scroll-view class="message-list" scroll-y>
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message-item" wx:if="{{item.sender === 'user'}}">
+        <text class="user-message">{{item.content}}</text>
+        <image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+      </view>
+      <view class="message-item" wx:if="{{item.sender === 'system'}}">
+        <image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+        <text class="system-message">{{item.content}}</text>
+      </view>
+    </block>
+  </scroll-view>
+
+  <view class="input-section">
+    <input class="input" value="{{inputMessage}}" bindinput="onInput" placeholder="请输入消息" />
+    <button class="send-button" bindtap="sendMessage">发送</button>
+  </view>
+</view>

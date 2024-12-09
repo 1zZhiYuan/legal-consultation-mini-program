@@ -1,0 +1,22 @@
+/* pages/cases/cases.wxss */
+.container {
+  padding: 20rpx;
+}
+
+.case-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-item {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.case-date, .case-title, .case-status {
+  font-size: 16px;
+  margin-bottom: 5rpx;
+}

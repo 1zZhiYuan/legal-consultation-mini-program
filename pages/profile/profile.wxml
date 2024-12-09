@@ -1,0 +1,53 @@
+<view class="container">
+  <view class="avatar-section" bindtap="changeAvatar">
+    <image class="avatar" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+  </view>
+
+  <view class="profile-header">
+    <text class="username">{{userInfo.username}}</text>
+    <button class="edit-button" bindtap="editProfile" wx:if="{{!isEditing}}">编辑资料</button>
+  </view>
+
+  <form wx:if="{{isEditing}}" bindsubmit="saveProfile">
+    <view class="edit-section">
+      <view class="edit-item">
+        <text class="edit-label">用户名:</text>
+        <input class="edit-input" name="username" value="{{userInfo.username}}" />
+      </view>
+      <view class="edit-item">
+        <text class="edit-label">电话:</text>
+        <input class="edit-input" name="phone" value="{{userInfo.phone}}" />
+      </view>
+      <view class="edit-item">
+        <text class="edit-label">邮箱:</text>
+        <input class="edit-input" name="email" value="{{userInfo.email}}" />
+      </view>
+      <view class="button-group">
+        <button class="save-button" form-type="submit">保存</button>
+        <button class="cancel-button" bindtap="cancelEdit">取消</button>
+      </view>
+    </view>
+  </form>
+
+  <view class="info-section" wx:if="{{!isEditing}}">
+    <view class="info-item">
+      <text class="info-label">电话:</text>
+      <text class="info-value">{{userInfo.phone}}</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">邮箱:</text>
+      <text class="info-value">{{userInfo.email}}</text>
+    </view>
+  </view>
+
+  <view class="stats-section">
+    <view class="stat-item" bindtap="viewConsultations">
+      <text class="stat-value">{{userInfo.consultations}}</text>
+      <text class="stat-label">咨询记录</text>
+    </view>
+    <view class="stat-item" bindtap="viewCases">
+      <text class="stat-value">{{userInfo.cases}}</text>
+      <text class="stat-label">案件记录</text>
+    </view>
+  </view>
+</view>

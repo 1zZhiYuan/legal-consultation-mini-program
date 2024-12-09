@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="issue-item">
+    <text class="question">{{issue.question}}</text>
+    <text class="answer">{{issue.answer}}</text>
+  </view>
+</view>

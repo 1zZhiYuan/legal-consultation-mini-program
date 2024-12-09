@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="case-list">
+    <view wx:for="{{cases}}" wx:key="id" class="case-item" bindtap="viewCaseDetail" data-id="{{item.id}}">
+      <text class="case-date">{{item.date}}</text>
+      <text class="case-title">{{item.title}}</text>
+      <text class="case-status">{{item.status}}</text>
+    </view>
+  </view>
+</view>

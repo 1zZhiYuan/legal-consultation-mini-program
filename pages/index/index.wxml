@@ -1,0 +1,33 @@
+<view class="container">
+  <!-- 滚动Banner图 -->
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500" circular="true">
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <image class="banner-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 专业评估部分 -->
+  <view class="section assessment-section">
+    <text class="section-title">专业法律评估</text>
+    <view class="assessment-content">
+      <text class="assessment-description">通过专业评估，了解您的法律需求</text>
+      <button class="assessment-button" hover-class="button-hover" bindtap="startAssessment">开始评估</button>
+    </view>
+  </view>
+
+  <!-- 推荐律师 -->
+  <view class="section">
+    <text class="section-title">推荐律师</text>
+    <view wx:for="{{lawyers}}" wx:key="name" class="lawyer-item" bindtap="navigateToLawyerDetail" data-id="{{item.id}}">
+      <text>{{item.name}} - {{item.speciality}}</text>
+    </view>
+  </view>
+
+  <!-- 常见法律问题 -->
+  <view class="section">
+    <text class="section-title">常见法律问题</text>
+    <view wx:for="{{legalIssues}}" wx:key="title" class="issue-item" bindtap="navigateToDetail" data-id="{{item.id}}">
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>

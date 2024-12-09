@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="header">
+    <text class="title">法律问题评估</text>
+  </view>
+  
+  <view class="question-container" wx:for="{{questions}}" wx:key="id">
+    <text class="question">{{index + 1}}. {{item.question}}</text>
+    <radio-group class="answer-group" bindchange="handleAnswer" data-id="{{item.id}}">
+      <label class="answer-item" wx:for="{{item.options}}" wx:for-item="option" wx:key="value">
+        <radio value="{{option.value}}" checked="{{option.checked}}"/>{{option.label}}
+      </label>
+    </radio-group>
+  </view>
+  
+  <view class="assessment-content">
+    <text class="assessment-description">通过专业评估，了解您的法律需求</text>
+    <button class="assessment-button" hover-class="button-hover" bindtap="completeAssessment">完成评估</button>
+  </view>
+</view>

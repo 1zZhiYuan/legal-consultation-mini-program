@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="lawyer-header">
+    <image class="lawyer-avatar" src="{{lawyer.avatarUrl}}" mode="aspectFill"></image>
+    <text class="lawyer-name">{{lawyer.name}}</text>
+    <text class="lawyer-speciality">{{lawyer.speciality}}</text>
+  </view>
+  <view class="lawyer-contact">
+    <text>联系方式: {{lawyer.contact}}</text>
+  </view>
+  <view class="lawyer-description">
+    <text>{{lawyer.description}}</text>
+  </view>
+  <view class="lawyer-experience">
+    <text class="experience-title">经历</text>
+    <text>{{lawyer.experience}}</text>
+  </view>
+</view>
